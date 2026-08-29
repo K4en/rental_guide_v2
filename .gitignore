@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Firebase
+frontend/.firebase/
+
+# Environment variables
+# Uncomment if you decide not to commit env files
+# frontend/.env*
