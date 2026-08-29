@@ -9,7 +9,6 @@ class UserMe(BaseModel):
     email: str
 
 class PropertyCreate(BaseModel):
-    user_id: int
     name: str
     address: str
 
