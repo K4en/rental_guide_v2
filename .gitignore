@@ -9,6 +9,9 @@ node_modules/
 # Firebase
 frontend/.firebase/
 
+# Database
+backend/database.db
+
 # Environment variables
 # Uncomment if you decide not to commit env files
 # frontend/.env*

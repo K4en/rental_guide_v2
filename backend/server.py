@@ -1,5 +1,4 @@
 import os
-
 from passlib.hash import bcrypt
 from datetime import datetime, timedelta
 from jose import jwt, JWTError
@@ -24,7 +23,7 @@ app.add_middleware(
 )
 
 # --- TOKEN STUFF ---
-SECRET_KEY = "this-is-a-long-secret-key-here"
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
